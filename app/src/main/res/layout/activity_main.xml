@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/recipecup"
+    tools:context="com.example.dell.recipecup.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/gradient"
+        android:backgroundTint="#5effffff"
+        android:id="@+id/ho"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:scaleType="centerCrop"
+        android:tint="#000"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/un"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="Email"
+            android:textSize="25dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="Password"
+            android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHOW"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#000"
+                android:id="@+id/show_hide_pass"/>
+
+        </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:text="Login"
+        android:id="@+id/loginbutton"
+        android:textColorHint="#000"
+        android:textSize="25dp"
+        android:clickable="true"
+        android:onClick="logg"
+
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User ?"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:onClick="newuser"
+        android:textColor="#000"
+        android:layout_weight="1"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:onClick="fp"
+            android:layout_gravity="right"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
